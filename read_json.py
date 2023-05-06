@@ -6,6 +6,12 @@ def read_json(obj):
   jdata = obj.replace("\'", "\"")
   return json.loads(jdata)
 
+# nombre más bonito
+def as_json(obj):
+  # replace quotes
+  jdata = obj.replace("\'", "\"")
+  return json.loads(jdata)
+
 def remove_name(obj):
   # removes "name" param in
   # hostnames
