@@ -160,6 +160,9 @@ cython_debug/
 #.idea/
 
 data.csv
+data_qaserver.csv
+data_produccion.csv
+data_develop.csv
 
 /bin
 /lib
