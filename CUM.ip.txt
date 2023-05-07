@@ -1,3 +1,0 @@
-data_PRU["out_bytes"] = data_PRU["out_bytes"]/max(data_PRU["out_bytes"])
-data_PRU["grad_Swap"] = data_PRU["grad_Swap"]/max(data_PRU["grad_Swap"])
-data_PRU["grad_total_bytes"] = data_PRU["grad_total_bytes"]/max(data_PRU["grad_total_bytes"])

@@ -1,11 +1,6 @@
-# reads json from the data 
-import pandas as pd
 import json
-from datetime import datetime
-
-
-# other functions as well
 import matplotlib.pyplot as plt
+from datetime import datetime
 
 def read_json(obj):
   # replace quotes
