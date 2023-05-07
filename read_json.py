@@ -1,6 +1,8 @@
 # reads json from the data 
 import pandas as pd
 import json
+from datetime import datetime
+
 
 # other functions as well
 import matplotlib.pyplot as plt
@@ -34,3 +36,9 @@ def plot_histogram(dframe,bns: int, logscale: bool):
   ax.set_xlabel(dframe.name)
   ax.set_ylabel("freq")
   return fig
+
+def format_time(time):
+  # convert dframe of time values
+  format = "%Y-%m-%dT%H:%M:%S.%fZ"
+  time_formatted = datetime.strptime(time, format)
+  return time_formatted
