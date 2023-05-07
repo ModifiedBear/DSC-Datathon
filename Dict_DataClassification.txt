@@ -1,0 +1,64 @@
+SYSTEM CPU
+
+    system.cpu.user.pct
+    The percentage of CPU time spent in user space. On multi-core systems, you can have percentages that are greater than 100%. For example, if 3 cores are at 60% use, then the system.cpu.user.pct will be 180%.
+    type: scaled_float
+    format: percent
+
+    system.cpu.system.pct
+    The percentage of CPU time spent in kernel space.
+    type: scaled_float
+    format: percent
+
+    system.cpu.idle.pct
+    The percentage of CPU time spent idle.
+    type: scaled_float
+    format: percent
+
+    system.cpu.cores
+    The number of CPU cores present on the host.
+    type: long
+
+
+SYSTEM MEMORY
+
+    system.memory.free
+        The total amount of free memory in bytes. This value does not include memory consumed by system caches and buffers (see system.memory.actual.free).
+        type: long
+        format: bytes
+
+    system.memory.actual.used.bytes
+        Actual used memory in bytes. It represents the difference between the total and the available memory. The available memory depends on the OS. For more details, please check system.actual.free.
+        type: long
+        format: bytes
+    
+    system.memory.actual.used.pct
+        The percentage of actual used memory.
+        type: scaled_float
+        format: percent
+    
+    system.memory.swap.total
+        Total swap memory.
+        type: long
+        format: bytes
+    
+    system.memory.swap.free
+        Available swap memory.
+        type: long
+        format: bytes
+
+NETWORK
+
+    system.network.out.bytes
+        The number of bytes sent.
+        type: long
+        format: bytes
+
+    system.network.in.bytes
+        The number of bytes received.
+
+        type: long
+        format: bytes
+
+PROPOSALS
+
