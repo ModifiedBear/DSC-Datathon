@@ -8,6 +8,7 @@ def main():
     Este es un ejemplo, dado los datos del hackathon
     Se preprocesan y se toma solo uno de los servidores para analizar.
     '''
+    # Descargar base de datos y ponerle este nombre :)
     data = pd.read_csv("data.csv")
     data_sample = data.sample(n = 100000, random_state=2333)
     files = resampling(data_sample, 'resampled')
